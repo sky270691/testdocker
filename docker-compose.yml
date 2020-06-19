@@ -5,10 +5,7 @@ services:
     ports:
     - 80:8080
     user: root
-    volumes:
-    - type: volume
-      source: maven-repo
-      target: /root/.m2
+    volumes: maven-repo:/root/.m2
     - type: bind
       source: /apps/testing/testdocker
       target: /app
