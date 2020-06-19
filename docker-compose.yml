@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3"
 services:
   aplikasi:
     image: myapp:test
@@ -6,9 +6,7 @@ services:
     - 80:8080
     user: root
     volumes:
-      - type: volume
-        source: maven-repo
-        target: /root/.m2
+      - maven-repo: /root/.m2
       - type: bind
         source: /apps/testing/testdocker
         target: /app
