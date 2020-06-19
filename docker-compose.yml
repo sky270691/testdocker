@@ -9,4 +9,6 @@ services:
         source: maven-repo
         target: /root/.m2
 volumes:
-  - maven-repo:
+  maven-repo:
+    external:
+      name: maven-repo
