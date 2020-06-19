@@ -15,4 +15,9 @@ public class HelloController {
         return "poloio bangka";
 
     }
+
+    @GetMapping("/bangke")
+    public String bangke(){
+        return "bangkeeeee";
+    }
 }
