@@ -8,5 +8,4 @@ services:
       - type: volume
         source: maven-repo
         target: /root/.m2
-  volumes:
-    - maven-repo:
+  volumes: maven-repo
