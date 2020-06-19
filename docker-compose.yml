@@ -10,7 +10,7 @@ services:
         target: /root/.m2
       - type: bind
         source: /apps/testing/testdocker
-        target: /app:rw
+        target: /app
 volumes:
   maven-repo:
     external:
