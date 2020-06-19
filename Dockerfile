@@ -3,6 +3,6 @@ COPY . /app
 WORKDIR /app
 RUN chmod +x ./mvnw
 VOLUME maven-repo:/root/.m2
-VOLUME /data/apps/testing/testdocker:/myapp
+VOLUME /data/apps/testing/testdocker:/app
 ENTRYPOINT ["./mvnw"]
 CMD ["spring-boot:run"]
