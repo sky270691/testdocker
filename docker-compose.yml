@@ -6,8 +6,9 @@ services:
     - 80:8080
     user: root
     volumes:
-    - volume:
-        maven-repo=/root/.m2
+    - type: volume
+      source: maven-repo
+      target: /root/.m2
     - type: bind
       source: /apps/testing/testdocker
       target: /app
