@@ -12,7 +12,7 @@ public class HelloController {
     @GetMapping("/hello")
     public String hello(){
 
-        return "ini adalah String yang di return";
+        return "diperbaiki lagi";
 
     }
 
